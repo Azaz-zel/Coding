@@ -1,0 +1,19 @@
+body {
+    background: linear-gradient(to bottom, #802093, #3F1A5F, #1C111B); /* Gradient background */
+    color: black;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    height: 100vh; /* Full height */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Column layout */
+    margin: 0; /* Remove default margin */
+}
+.navbar{
+    background: linear-gradient(to bottom, #802093, #1C111B);
+}
+.nav-item{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.navbar-brand{
+    font-size: 34px;
+}
