@@ -1,0 +1,759 @@
+body {
+    background: linear-gradient(201.15deg, #802093 0%, #3F1A5F 29%, #1C111B 100%);
+    color: black;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    height: 100vh; /* Full height */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Column layout */
+    margin: 0; /* Remove default margin */
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; /* Memastikan gradient tetap */
+    background-repeat: no-repeat; /* Mencegah pengulangan */
+}
+
+.navbar{
+    background: linear-gradient(to bottom, #802093, #1C111B);
+}
+.nav-item{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+.navbar-brand{
+    font-size: 34px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 13.1px #FFFFFF;
+}
+.nav-link{
+    color: #FFFFFF;
+    text-shadow: 1px 1px 13.1px #FFFFFF;
+    
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+/* NEW GAME DISPLAY */
+.up-page{
+    /* justify-content: center; */
+    justify-items: center;
+}
+
+.img-newgame{
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 2px;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+@media screen and (max-width : 1271px) {
+    .img-newgame{
+        display: none;
+    }
+}
+.h1{
+    margin-top: 7rem;
+    text-align: center;
+    color: white;
+}
+.center-carousel{
+    justify-items: center;
+}
+.center-carousel{
+    max-width: 100%;
+}
+.container-card {
+    position: relative;
+    margin: 7rem;
+    background: #1C111B;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;  
+}
+
+.card-hp {
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #802093, #1C111B);
+    color: #fff;
+    margin: 2rem;
+}
+.apex img {
+    width: 464px;
+    /* height: 197px; */
+    object-fit: cover;
+    max-width: 100%; /* Menghindari gambar meluap */
+    max-height: 100%; /* Menjaga proporsi */
+}
+
+.card-body {
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 1271px){
+    .card-text{
+        display: none;
+    }
+}
+
+.card-text-C {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.discount-container {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.discount-badge {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1177px){
+    .discount-badge{
+        display: none;
+    }
+}
+
+.price {
+    background-color: #000;
+    color: #28a745;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #e63946;
+    font-size: 12px;
+}
+
+.discounted-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.Gambar img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+.gambar-topimage{
+    max-width: 800px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+}
+.game-section {
+    background: rgba(57, 57, 57, 0.58);
+    background: rgba(57, 57, 57, 0.58);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.game-cover {
+    width: 300px; 
+    border-radius: 10px;
+    flex-shrink: 0; 
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.game-details {
+    max-width: 800px; 
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+}
+.c{
+    font-size: 12px;
+    list-style: none;
+}
+.F{
+    line-height:0%;
+    font-size: 19px;
+}
+.gallery{
+    max-width: 100%;
+    display: flex;
+    gap: 10px;
+    flex: 1 1 calc(33% - 10px);
+    flex-wrap: wrap; /* Responsif: galeri jadi grid saat sempit */
+    justify-content: center;
+}
+.Text{
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+.Harga-Death-Stranding{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5px;
+    text-align: right;
+}
+.Ket-Game{
+    justify-content: center;
+    display: flex;
+    margin: 7rem;
+    gap: 2rem;
+}
+@media screen and (max-width: 1418px){
+
+    .Ket-Game {
+        flex-direction: column; /* Ubah layout menjadi kolom */
+        align-items: center; /* Pusatkan konten */
+}
+
+.Gambar, .content {
+        width: 100%; /* Elemen mengambil lebar penuh */
+}
+
+.content {
+        margin-top: 20px; /* Jarak antara gambar dan teks */
+}
+.gallery{
+    flex: 1 1 100%;
+}
+}
+
+@media screen and (max-width: 642px){
+    .p{
+        display: none;
+    }
+}
+
+
+.game-header {
+    background: linear-gradient(201.15deg, #802093 0%, #3F1A5F 29%, #1C111B 100%); 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 5rem;
+}
+
+.game-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.price-section {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.price {
+    background: white;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.wish-list-btn {
+    background: #800080;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buy-now-btn {
+    background: #00b300;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.review-section {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.review-header {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.review-card {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-content {
+    flex: 1;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    line-height: 1.5;
+}
+
+.helpful-text {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .game-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price-section {
+        flex-wrap: wrap;
+    }
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 10rem;
+}
+
+.about-game {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.system-requirements {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.game-description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-top: 5rem;
+}
+
+.included-items {
+    list-style: none;
+}
+
+.included-items li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.included-items li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #FFFFFF;
+}
+
+.specs-table td {
+    padding: 8px 0;
+    border-bottom: 1px 
+}
+
+.specs-table td:first-child {
+    width: 40%;
+}
+
+.specs-table td:last-child {
+    text-align: right;
+}
+
+.specs-category {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #fff;
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .game-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .price-section {
+        flex-wrap: wrap;
+    }
+}
+.profile-container {
+    width: 60%;
+    margin: 50px auto;
+    background: linear-gradient(201.15deg, #802093 0%, #3F1A5F 29%, #1C111B 100%);
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-header img {
+max-width: 20%;
+    margin-right: 20px;
+}
+
+.profile-header div {
+    flex-grow: 1;
+}
+
+.NAAME{
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+.Location{
+    
+    font-size: 14px;
+    color: #d1d1d1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-header .level {
+    text-align: right;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-header .level p {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 915px){
+    .level{
+        font-size: 15px;
+    }
+    .L{
+        font-size: 5px;
+    }
+}
+
+.profile-header .edit-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(201.15deg, #802093 0%, #3F1A5F 29%, #1C111B 100%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-header .edit-btn:hover {
+    background: linear-gradient(201.15deg, #802093 0%, #3F1A5F 29%, #1C111B 100%);
+}
+
+.tab-container {
+    margin-top: 20px;
+    background: linear-gradient(201.15deg, #7c29a3 0%, #3b2250 29%, #1C111B 100%);
+}
+
+.tab-container table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 772px){
+    .tab-title{
+        font-size: 15px;
+    }
+    .tab-container td{
+        font-size: 10px;
+    }
+}
+.tab-container th, .tab-container td {
+    padding: 10px;
+    text-align: left;
+}
+
+.tab-container th {
+    background-color: #311c3b;
+}
+
+.tab-container tr:nth-child(even) {
+    background-color: #24102b;
+}
+
+.tab-container tr:nth-child(odd) {
+    background-color: #5a376b;
+}
+
+.tab-container td {
+    border-top: 1px solid #6f398b;
+}
+
+.tab-container .tab-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tab-container .tab-title span {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #FFFFFF;
+}
+
+.friend-section {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.friend-section h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.friend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-left: 3rem;
+}
+
+.friend-card {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.friend-card:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.friend-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.friend-name {
+    color: white;
+    font-size: 14px;
+    margin: 0;
+}
+
+.friend-status {
+    color: #b8b8b8;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .friend-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .friend-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .friend-section {
+        padding: 15px;
+    }
+}
+
+.community-activity-section {
+    background: linear-gradient(201.15deg, #7c29a3 0%, #3b2250 29%, #1C111B 100%);
+    border-radius: 8px;
+    padding: 30px;
+}
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5);
+}
+.recently-played-games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.game-card img {
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 8px;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+.search-box .form-control {
+    padding-right: 40px;
+}
+.search-box .input-group-text {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+.search-box label {
+    font-weight: bold;
+}
+
+
+.reviews-section-2 {
+    border-radius: 8px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.adan{
+    color: #FFFFFF;
+}
+.nav-tabs .nav-link {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+}
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #fff;
+}
+.review-card {
+    background-color: #2A1E34;
+    border-radius: 8px;
+    padding: 20px;
+    color: #fff;
+}
+.screenshot-card-2 {
+    background-color: #2A1E34;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+.screenshot-card img {
+    border-radius: 8px;
+}
